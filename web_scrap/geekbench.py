@@ -17,6 +17,7 @@ while True:
         if platform == 'macOS' and '6 cores' in device:
             data.append([device, platform, int(single_core), int(multi_core)])
     last_part = soup.select_one(".page-item.next.next_page ").select_one("a")["href"]
+    print(base + last_part)
     if last_part == '#' or count > 0:
         break
 count += 1

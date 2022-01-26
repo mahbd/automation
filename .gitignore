@@ -1,3 +1,4 @@
 messenger_cookie.json
 .idea
 secret.py
+__pycache__
