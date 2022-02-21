@@ -20,7 +20,10 @@ for file in all_files:
         total_chars += sum(len(line) for line in open(file))
         # Output file name line count, word count, and char count
         file_name = file.split("\\")[-1]
-        print(f"{file_name} has {line_here} lines, {words_here} words, and {chars_here} characters")
+        lines = f"{line_here} lines".ljust(12)
+        words = f"{words_here} words".ljust(14)
+        chars = f"{chars_here} chars".ljust(18)
+        print(f"{file_name.ljust(35)} has {lines} {words} {chars}")
 print("Summary\n--------------------------------")
 print(f"There are {len(all_files)} files in {directory}")
 print(f"There are {total_lines} lines in {directory}")
