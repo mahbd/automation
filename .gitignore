@@ -3,3 +3,4 @@ messenger_cookie.json
 secret.py
 __pycache__
 **/*.json
+/venv/
